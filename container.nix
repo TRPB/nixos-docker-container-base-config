@@ -1,12 +1,6 @@
 { config, pkgs, lib, modulesPath, ... }:
 
 {
-  imports = [
-    <nixpkgs/nixos/modules/virtualisation/docker-image.nix>
-    (modulesPath + "/installer/scan/not-detected.nix")
-    ./hardware-configuration.nix
-  ];
-
   boot.initrd.availableKernelModules = [ ];
   boot.initrd.kernelModules = [ ];
   boot.kernelModules = [ ];
