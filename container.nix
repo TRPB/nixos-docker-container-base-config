@@ -5,6 +5,7 @@
   boot.initrd.kernelModules = [ ];
   boot.kernelModules = [ ];
   boot.extraModulePackages = [ ];
+  boot.isContainer = true;
 
   fileSystems."/" = { 
     device = "overlay";
